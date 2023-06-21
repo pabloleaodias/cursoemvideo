@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos com HTML5</title>
+</head>
+<body>
+    <h1>Inserindo vídeos hospedados localmente.</h1>
+    <p>Este vídeo está hospedado no meu próprio servidor.</p>
+
+    <video width="560" poster="imagens/cowboy.png" controls loop>
+        <source src="midia/pexels-rod.mp4" type="video/mp4">
+        <source src="midia/pexels-rod.ogv" type="video/ogv">
+        <source src="midia/pexels-rod.m4v" type="video/m4v">
+        <source src="midia/pexels-rod.webm" type="video/webm">
+        <p>Infelizmente seu navegador não é compatível com o vídeo.</p>
+        <p>Segue dowload em MP4 abaixo.</p>
+        <a href="midia/pexels-rod.mp4"></a>
+    </video>
+
+    <h1>Inserindo vídeos do Youtube</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/LW0bhKitRBk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+    <h1>Inserindo vídeos do Vimeo</h1>
+    <iframe src="https://player.vimeo.com/video/71127606?h=d543aa14ac&loop=1" width="560" height="315" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+</body>
+</html>

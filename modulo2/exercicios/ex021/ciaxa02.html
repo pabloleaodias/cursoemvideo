@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body {
+            background-color: darkgray;
+            margin: 0px;
+        }
+
+
+        header {
+            background-color: white;
+            margin: 7px;
+        }
+
+        header > h1 {
+            text-align: center;
+        }
+
+        nav {
+            background-color: gray;
+            padding: 5px;
+            display: flex;
+            justify-content: space-between;
+            box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.450);
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            margin: 0px;
+            padding: 5px;
+            box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.450);
+        }
+
+        nav > a:hover {
+            color: yellow;
+        }
+
+        main {
+            background-color: white;
+            margin: 7px;
+            border-radius: 10px 0px;
+            box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.450);
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        #assuntos {
+            text-align: center;
+        }
+
+        article {
+            text-align: justify;
+            text-indent: 10px;
+            padding: 10px;
+        }
+
+        article > aside {
+            background-color: rgb(124, 123, 123);
+            color: white;
+            padding: 1px;
+            text-align: center;
+        }
+
+        footer {
+            background-color: black;
+            text-align: center;
+            color: white;
+            margin: 10px;
+            padding: 4px;
+        }
+
+        footer p {
+            margin: 0px
+        }
+
+        #circulo {
+            background-color: white;
+            height: 200px;
+            width: 200px;
+            margin: auto;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <!-- HEADER, MAIN e o FOOTER nada mais são do que DIV's semânticas, também conhecidas como GROUPING TAGS. Isso é muito útil para organizar o documento HTML5 e não precisar ficar usando diversas DIV's, o que era feito no HTML4 -->
+    <header>
+        <h1>Meu Site</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+            <p>Esportes Política Tecnologia</p>
+        </section>
+        <section id="notícias">
+            <article>
+                <h2>Notícia sobre o Brasil</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque saepe ipsa obcaecati culpa dolor sed aliquam, ipsum voluptatum doloribus non itaque facere deserunt aspernatur distinctio, a provident! Minus, id explicabo.</p>
+                <aside>
+                    <p>Artigo escrito por: Pablo Leão</p>
+                </aside>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido pelo Curso em Vídeo</p>
+    </footer>
+    <div id="circulo"></div>
+</body>
+</html>

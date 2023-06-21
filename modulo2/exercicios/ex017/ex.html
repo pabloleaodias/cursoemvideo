@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Landing Page</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header>
+		<nav>
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Sobre nós</a></li>
+				<li><a href="#">Contato</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<main>
+		<section id="banner">
+			<h1>Bem-vindo à nossa Landing Page</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis orci velit. Donec et eros non odio interdum hendrerit ac ac justo.</p>
+			<a href="#" class="btn-primary">Saiba Mais</a>
+		</section>
+
+		<section id="features">
+			<h2>Características</h2>
+			<div class="feature-box">
+				<i class="fas fa-globe-americas"></i>
+				<h3>Global</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+			</div>
+			<div class="feature-box">
+				<i class="fas fa-clock"></i>
+				<h3>24/7 Suporte</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+			</div>
+			<div class="feature-box">
+				<i class="fas fa-cog"></i>
+				<h3>Fácil de usar</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+			</div>
+		</section>
+
+		<section id="pricing">
+			<h2>Preços</h2>
+			<div class="pricing-table">
+				<div class="pricing-card">
+					<h3>Plano Básico</h3>
+					<h4>$9.99/mês</h4>
+					<ul>
+						<li>1 usuário</li>
+						<li>5 projetos</li>
+						<li>Suporte por email</li>
+					</ul>
+					<a href="#" class="btn-secondary">Comprar</a>
+				</div>
+				<div class="pricing-card">
+					<h3>Plano Avançado</h3>
+					<h4>$19.99/mês</h4>
+					<ul>
+						<li>5 usuários</li>
+						<li>20 projetos</li>
+						<li>Suporte por email e telefone</li>
+					</ul>
+					<a href="#" class="btn-primary">Comprar</a>
+				</div>
+				<div class="pricing-card">
+					<h3>Plano Premium</h3>
+					<h4>$49.99/mês</h4>
+					<ul>
+						<li>Usuários ilimitados</li>
+						<li>Projetos ilimitados</li>
+						<li>Suporte por email, telefone e chat ao vivo</li>
+					</ul>
+					<a href="#" class="btn-secondary">Comprar</a>
+				</div>
+			</div>
+		</section>
+
+		<section id="contact">
+			<h		2>Contato</h2>
+                <form>
+                    <div class="form-group">
+                        <label for="name">Nome:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Mensagem:</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary">Enviar</button>
+                </form>
+            </section>
+        </main>
+        
+        <footer>
+            <p>&copy; 2023 - Todos os direitos reservados.</p>
+        </footer>
+        
+        <script src="script.js"></script>
+        
