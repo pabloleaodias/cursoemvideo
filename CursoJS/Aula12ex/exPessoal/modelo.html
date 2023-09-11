@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiência como Programador</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <header>
+        <h1>Em qual Estágio você está na Programação?</h1>
+   </header>
+   <section>
+        <div>
+            <p>
+                Sexo:
+                <input type="radio" name="radsex" id="m">
+                <label for="m">Masculino</label>
+                <input type="radio" name="radsex" id="f">
+                <label for="f">Feminino</label>
+            </p>
+            <p>
+                Ano de Nascimento:
+                <input type="number" name="txtano" id="txtano">
+            </p>
+            <p>
+                Primeiro contato com Programação (idade na época):
+                <input type="number" name="txtstart" id="txtstart">
+            </p>
+            <p>
+                Programa há quanto tempo (em anos)?
+                <input type="number" name="txttime" id="txttime">
+            </p>
+            <input type="button" value="Verificar" onclick="carregar()">
+        </div>
+        <div id="res">
+
+        </div>
+   </section> 
+   <footer>
+        <p>&copy; CursoemVideo</p>
+   </footer>
+   <script src="script.js"></script>
+</body>
+</html>

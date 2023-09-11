@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com o DOM</title>
+    <style>
+        body {
+            background-color: rgb(68, 125, 200);
+            color: white;
+            font: normal 18pt Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos com o DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em Javascript.</p>
+    <div id="msg">Clique em mim</div>
+    <script>
+        var p1 = window.document.getElementsByTagName('p')[0];
+        var p2 = window.document.getElementsByTagName('p')[1];
+        var corpo = window.document.body
+        window.document.write('Está escrito assim: ' + p1.innerText);
+        var d = window.document.getElementById('msg')
+        window.document.write('<br>')
+        p1.style.color = 'yellow';
+        corpo.style.background = 'black';
+        window.document.write(p2.innerHTML);
+        d.style.background = 'green'
+        /* 
+        
+        d.innerText = 'Estou aguardando...'
+        window.document.getElementById('msg').innerText = 'Olá'
+        d.innerText = 'Estou aguardando...'
+        window.document.getElementsByName('msg').innerText = 'Olá'
+        d.innerText = 'Estou aguardando...'
+        window.document.getElementsByClassName('msg').innerText = 'Olá'
+        
+        Formas de alterar um texto HTML por "getElementBy"
+
+        */
+        window.document.querySelector('div#msg').innerText = 'Olá'
+    </script>
+</body>
+</html>

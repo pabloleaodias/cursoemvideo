@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+</head>
+<body>
+    <h1>BR ou Gringo?</h1>
+    Digite o país que você reside: <input type="text" name="nacao" id="nacao">
+    <input type="button" value="Verificar" onclick="country()">
+    <div id="pais">
+
+    </div>
+    <script>
+        function country() {
+            var pais = document.getElementById('nacao').value; 
+            var res = document.querySelector('div#pais');
+            res.innerHTML = `<p>Você está vivendo em ${pais}</p>`;
+            if (pais != 'Brasil') {
+                res.innerHTML += '<p>Você é Gringo!</p>';
+            }
+            else {
+                res.innerHTML += '<p>Você é Brasileiro!</p>';
+            }
+        }
+    </script>
+</body>
+</html>
