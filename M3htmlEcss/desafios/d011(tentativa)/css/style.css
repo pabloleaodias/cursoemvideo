@@ -1,35 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@700&family=Rubik&family=Secular+One&family=Sriracha&family=Ysabeau+SC:wght@1;100;200;300;400;500;600;700;800;900;1000&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     border: 0;
+    font-family: 'Sriracha', cursive;
 }
 
 header {
+    padding: 50px;
+}
+
+.ponta {
     background-color: black;
     color: white;
     text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-header p a {
+.link {
     color: white;
     text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
 }
 
-header p a:hover {
+.link:hover {
     text-decoration: underline;
 }
 
-section.figura {
+#titulo {
+    font-family: 'Passion One', sans-serif;
+    font-size: 7em;
+}
+
+#img1 {
+    background-image: url('../imagens/background001.jpg');
+}
+
+#img2 {
+    background-image: url('../imagens/background002.jpg');
+}
+
+.normal {
+    padding-top: 60px;
+    padding-bottom: 100px;
+}
+
+.normal.figura {
     background-position: left center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    box-shadow: inset 0px 3px 20px 0px rgba(0, 0, 0, 0.75);
 }
 
-section#img1 {
-    background-image: url('../imagens/background001.jpg');
+.transparente {
+    margin-left: 35px;
+    padding: 5px;
+    font-size: 3em;
 }
 
-section#img2 {
-    background-image: url('../imagens/background002.jpg');
+.transparente.visivel {
+    max-width: 45%;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-shadow: 7px 5px 3px rgba(0, 0, 0, 0.7)
+}
+
+footer {
+    padding: 10px;
 }
