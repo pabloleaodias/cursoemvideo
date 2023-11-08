@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+header p a {
+    color: white;
+    text-decoration: none;
+}
+
+header p a:hover {
+    text-decoration: underline;
+}
+
+section.figura {
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+section#img1 {
+    background-image: url('../imagens/background001.jpg');
+}
+
+section#img2 {
+    background-image: url('../imagens/background002.jpg');
+}
